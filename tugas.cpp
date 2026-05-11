@@ -18,5 +18,8 @@ public:
         email = pEmail;
     }
 
- 
-    
+    int generateId() {
+        return ++globalId;
+    }
+};
+
