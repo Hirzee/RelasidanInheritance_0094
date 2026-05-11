@@ -17,3 +17,6 @@ public:
         nama = pNama;
         email = pEmail;
     }
+
+ 
+    
