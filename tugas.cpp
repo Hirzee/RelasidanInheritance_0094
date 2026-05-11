@@ -63,3 +63,24 @@ public:
         }
     }
 };
+
+int main() {
+
+    Admin admin1("Budi", "admin@gmail.com");
+
+    Member member1("Rina", "rina@gmail.com", true);
+    Member member2("Dewi", "dewi@gmail.com", false);
+
+    admin1.showAllMember();
+    admin1.toggleActivationMember();
+
+    cout << endl;
+
+    member1.showProfile();
+
+    cout << endl;
+
+    member2.showProfile();
+
+    return 0;
+}
