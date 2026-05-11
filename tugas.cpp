@@ -23,3 +23,18 @@ public:
     }
 };
 
+int User::globalId = 0;
+
+class Admin : public User {
+public:
+    Admin(string pNama, string pEmail)
+        : User(pNama, pEmail) {}
+
+    void showAllMember() {
+        cout << "Admin menampilkan semua member" << endl;
+    }
+
+    void toggleActivationMember() {
+        cout << "Status member berhasil diubah" << endl;
+    }
+};
