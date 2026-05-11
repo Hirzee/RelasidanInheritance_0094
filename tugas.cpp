@@ -38,3 +38,28 @@ public:
         cout << "Status member berhasil diubah" << endl;
     }
 };
+
+class Member : public User {
+private:
+    bool status;
+
+public:
+    Member(string pNama, string pEmail, bool pStatus)
+        : User(pNama, pEmail) {
+        status = pStatus;
+    }
+
+    void showProfile() {
+        cout << "===== PROFILE MEMBER =====" << endl;
+        cout << "ID     : " << id << endl;
+        cout << "Nama   : " << nama << endl;
+        cout << "Email  : " << email << endl;
+        cout << "Status : ";
+
+        if(status == true) {
+            cout << "Aktif" << endl;
+        } else {
+            cout << "Nonaktif" << endl;
+        }
+    }
+};
