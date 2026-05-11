@@ -9,3 +9,11 @@ protected:
     int id;
     string nama;
     string email;
+
+public:
+    
+    User(string pNama, string pEmail) {
+        id = generateId();
+        nama = pNama;
+        email = pEmail;
+    }
